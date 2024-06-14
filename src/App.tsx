@@ -1,12 +1,11 @@
 import "./App.css";
 
 function App() {
-  // variable with unknown datatype
-  let anyTypeVar: unknown;
+  // Function declaration
+  let funcName: (param1: string, param2: number) => void; // return undefined type
+  let funcName1: (param1: string) => never; // return nothing
+  let funcName2: (param1: number) => string; // return string
 
-  anyTypeVar = 12;
-  anyTypeVar = "";
-  anyTypeVar = true;
 
   return <div className="App">Hello world</div>;
 }
