@@ -1,12 +1,12 @@
 import "./App.css";
 
 function App() {
-  //multiple types of a single variable
-  let multiTypeVariable: number | string | boolean;
+  // variable with unknown datatype
+  let anyTypeVar: unknown;
 
-  multiTypeVariable = "This is String";
-  multiTypeVariable = 25;
-  multiTypeVariable = true;
+  anyTypeVar = 12;
+  anyTypeVar = "";
+  anyTypeVar = true;
 
   return <div className="App">Hello world</div>;
 }
