@@ -1,22 +1,12 @@
 import "./App.css";
 
 function App() {
-  // dataTypes
-  let name: string;
-  let intNumber: number;
-  let boolVar: boolean;
-  let stringArray: string[];
-  let role: [number, string];
-  type Person = {
-    name: string;
-    age: number;
-    isMarried?: boolean; //optional/nullable
-  };
-  let personObjet: Person = {
-    name: "Mr React",
-    age: 25,
-  };
-  let personObjetArray: Person[];
+  //multiple types of a single variable
+  let multiTypeVariable: number | string | boolean;
+
+  multiTypeVariable = "This is String";
+  multiTypeVariable = 25;
+  multiTypeVariable = true;
 
   return <div className="App">Hello world</div>;
 }
